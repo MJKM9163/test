@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>매일우유</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="end_box">주문이 완료되었습니다!
+        </div>
+            <input type="button" onclick="end_box_down()" value="확인" id="out_button">
+            <div id="milk_box">
+                <img src="image/original_milk.png" id="original_milk" class="All_milk">
+                <img src="image/low_fat2_milk.png" id="low_fat2_milk" class="All_milk">
+                <img src="image/low_fat1_milk.png" id="low_fat1_milk" class="All_milk">
+                <img src="image/fat_free_milk.png" id="fat_free_milk" class="All_milk">
+
+                <input type="button" onclick="left_click()" id="left_button" class="All_button">  
+                <input type="button" onclick="right_click()" id="right_button" class="All_button">
+                <input type="button" onclick="slide_button()" value="주문하기" id="order_button">
+                <div id="curtain"></div>
+                <div id="order_box">
+                    <select id="select_box">
+                        <option selected value="1">1개</option>
+                        <option value="6">6개</option>
+                        <option value="18">18개</option>
+                    </select>
+                    <input type="text" placeholder="주소를 입력하세요" value="" id="address_box">
+                    <input type="submit" onclick="loading()" value="주문하기" id="submit_box">
+                </div>
+            </div>
+            <div id="loading_box">
+            </div>
+            <div id="loading_animation"></div>
+            
+
+
+        <script src="javascript.js"></script>
+    </body>
+</html>

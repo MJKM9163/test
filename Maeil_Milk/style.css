@@ -1,0 +1,268 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#loading_box {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    z-index: -5;
+}
+
+#loading_animation {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 5px solid yellow;
+    border-color: yellow transparent transparent;
+    border-radius: 50%;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    animation: spin 0.7s linear infinite;
+    animation-play-state: paused;
+    display: none;
+    z-index: -4;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        left: 48%;
+        display: block;
+    }
+    100% {
+        transform: rotate(360deg);
+        left: 48%;
+        display: block;
+    }
+}
+
+#end_box {
+    position: absolute;
+    background-color: rgba(255, 249, 203, 0.925);
+    width: 400px;
+    height: 500px;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    animation: box_up 0.2s linear forwards;
+    animation-play-state: paused;
+    opacity: 0%;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 11;
+    z-index: -6;
+}
+
+@keyframes box_up {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+#out_button {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 70px;
+    border: 1px solid khaki;
+    border-radius: 10px;
+    background-color: rgb(255, 245, 155);
+    animation: box_up 0.2s linear forwards;
+    animation-play-state: paused;
+    font-size: large;
+    outline: none;
+    z-index: -6;
+}
+
+@keyframes box_up {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+#out_button:active {
+    background-color: rgb(253, 247, 194);
+}
+
+#milk_box {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.All_milk {
+    position: absolute;
+    transition: 0.5s;
+}
+
+#original_milk {
+    left: 0%;
+    width: 571px;
+    opacity: 100%;
+}
+
+#low_fat2_milk {
+    left: 80%;
+    width: 250px;
+    opacity: 0%;
+}
+
+#low_fat1_milk {
+    left: 80%;
+    width: 250px;
+    opacity: 0%;
+}
+
+#fat_free_milk {
+    left: 80%;
+    width: 250px;
+    opacity: 0%;
+}
+
+.All_button {
+    position: absolute;
+    border: 0px;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 68px;
+    top: 38%;
+    transition: 0.3s;
+    cursor: pointer;
+    opacity: 70%;
+}
+
+.All_button:focus {
+    border: none;
+    outline: none;
+}
+
+.All_button:hover {
+    opacity: 40%;
+}
+
+#left_button {
+    background: url("icon/left.png") no-repeat;
+    background-position: center;
+    left: 17%;
+    display: none;
+    
+}
+
+#right_button {
+    background: url("icon/right.png") no-repeat;
+    background-position: center;
+    left: 80%;
+}
+
+#curtain {
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 300px;
+    z-index: -1;
+    position: absolute;
+}
+
+#order_button {
+    position: absolute;
+    border: 2px;
+    border-radius: 20px;
+    border-color: skyblue;
+    background-color: skyblue;
+    left: 50%;
+    top: 93.3%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 40px;
+    outline: none;
+    transition: 0.2s;
+}
+
+#order_button:hover {
+    opacity: 70%;
+}
+
+#order_button:active {
+    opacity: 40%;
+    transition: 0s;
+}
+
+#order_box {
+    text-align: center;
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    left: 50.5%;
+    top: 68%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+    z-index: -2;
+    justify-content: center;
+}
+
+#select_box {
+    width: 365px;
+    padding: 5px;
+    border: 1px solid rgb(32, 32, 32);
+    border-radius: 3px;
+    font-size: large;
+    outline: none;
+}
+
+#select_box::-ms-expand {
+    display: none;
+}
+
+#address_box {
+    width: 352px;
+    height: 30px;
+    padding: 5px;
+    margin: 8px 0px 8px 0px;
+    border: 1px solid rgb(32, 32, 32);
+    border-radius: 3px;
+    outline: none;
+    font-size: large;
+}
+
+#submit_box {
+    width: 365px;
+    height: 70px;
+    border: 2px;
+    border-radius: 20px;
+    background-color: skyblue;
+    outline: none;
+    transition: 0.2s;
+}
+
+#submit_box:hover {
+    opacity: 70%;
+}
+
+#submit_box:active {
+    opacity: 40%;
+    transition: 0s;
+}
