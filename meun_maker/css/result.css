@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+
+p {
+    margin: 5px 0px;
+    font-size: large;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+li {
+    list-style: none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#center_box {
+    position: relative;
+    left: 0px;
+    transition: 0.3s;
+}
+
+#grid_box {
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-7%);
+    display: flex;
+    width: 3000px;
+    justify-content: space-around;
+    transition: 0.3s;
+}
+
+.item {
+    width: 350px;
+    height: 700px;
+    background-color: bisque;
+    text-align: center;
+}
+
+/*.item::before {
+    content: "";
+    position: absolute;
+    top: 225px;
+    left: 63px;
+    width: 300px;
+    background-color: red;
+    border: 1px solid black;
+}*/
+
+/*.item::after {
+    content: "";
+    position: absolute;
+    bottom: 230px;
+    left: 63px;
+    width: 300px;
+    border: 1px solid black;
+}*/
+
+.partition {
+    border: 1px solid black;
+}
