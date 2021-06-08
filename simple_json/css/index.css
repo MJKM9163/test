@@ -1,0 +1,45 @@
+body {
+    margin: 0px 0px 0px 10px;
+    width: 100%;
+    height: 100vh;
+}
+
+#add_button {
+    position: absolute;
+    left: 400px;
+    width: 70px;
+    height: 30px;
+}
+
+#remove_button {
+    position: absolute;
+    top: 70px;
+    left: 400px;
+    width: 70px;
+    height: 30px;
+}
+
+#json_down {
+    position: absolute;
+    left: 500px;
+    width: 120px;
+    height: 30px;
+}
+
+#top {
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+}
+
+li {
+    padding-left: 100px;
+    float: left;
+    list-style: none;
+}
+
+#flex_box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+}
